@@ -1,11 +1,9 @@
 ---
 applications:
-  -
-    env: ~
-    host: ps-pal-tracker-review-suchi
-    name: pal-tracker
-    path: build/libs/pal-tracker.jar
-    services:
+- name: pal-tracker
+  path: build/libs/pal-tracker.jar
+  host: ps-pal-tracker-review-suchi
+  services:
       - tracker-database
-  -
-    SECURITY_FORCE_HTTPS: true
+env:
+- SECURITY_FORCE_HTTPS: true
