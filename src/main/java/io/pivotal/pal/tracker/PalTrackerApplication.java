@@ -14,7 +14,7 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-pubbuild.lic class PalTrackerApplication {
+public class PalTrackerApplication {
 
     @Autowired
     DataSource dataSource;
